@@ -1,17 +1,28 @@
 ﻿body {
-    width: 100vw;
-    height: 100vh;
+
     margin: 0;
     padding: 0;
     background: black;
-    overflow: hidden;
+
     color: #D9DADB;
     font-family: 'Open Sans', sans-serif;
 }
+body, html {
+    height: 100%;
+}
 
-
+canvas {
+   position: fixed;
+   height: 100%;
+   z-index: -1;
+}
+.projects img {
+    width: 100%;
+}
 .app{
     position: absolute;
+    top: 0;
+    bottom: 0;
     display: grid;
     grid-template-columns: 1fr;
 
@@ -22,8 +33,9 @@
 .description{
  padding: 2rem;
 }
-.app img {
-    height: 8rem;
+.profile  {
+    
+    height: 10rem;
     border-radius: 50%;
 
 
@@ -32,17 +44,26 @@ ul{
     padding: 0;
 }
 
-.project-btn{
-    margin:2rem auto;
-    background-color: forestgreen;
+.project-btn {
+    margin: 2rem auto;
+    background-color: #1FC426;
     width: 8rem;
     padding: 1rem;
     border-radius: 100%;
     text-align: center;
-
+    cursor: pointer;
 }
 li {
     list-style: none;
     display: inline;
 }
 
+.fa {
+    font-size: 2rem;
+    color: #AAAAAA;
+}
+
+.hide{
+    display: none;
+
+}
