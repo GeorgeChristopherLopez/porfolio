@@ -21,14 +21,18 @@ canvas {
 }
 .app{
     position: absolute;
-    top: 0;
-    bottom: 0;
+    
     display: grid;
     grid-template-columns: 1fr;
 
    text-align: center;
    margin: 15% 10%;
     
+}
+
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .description{
  padding: 2rem;
@@ -37,21 +41,30 @@ canvas {
     
     height: 10rem;
     border-radius: 50%;
+}
 
+.profile-section{
+    padding: 2.5rem;
+}
 
+.adjust, .about-me{
+    margin-top: 0;
+    margin-bottom:0;
+    padding-bottom: 0;
 }
 ul{
     padding: 0;
 }
 
 .project-btn {
-    margin: 2rem auto;
+    margin:0rem auto;
     background-color: #1FC426;
     width: 8rem;
     padding: 1rem;
     border-radius: 100%;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 li {
     list-style: none;
